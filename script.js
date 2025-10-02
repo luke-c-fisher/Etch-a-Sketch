@@ -1,12 +1,12 @@
-const container = document.getElementsByClassName("container");
-
-function createDiv(){
-    const divs = document.createElement("div");
-    divs.textContent = "I am a div";
+const container = document.getElementById("container");
 
 
-    container.appendChild(divs);
-}
+const divs = document.createElement("div");
+divs.setAttribute ("style", "color: black; background: pink; border: 2px black;");
+divs.textContent = "I am a div";
+
+container.appendChild(divs);
+
 
 
 
