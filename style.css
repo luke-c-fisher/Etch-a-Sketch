@@ -1,6 +1,20 @@
-#container {
+header {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* FLEXBOX ================== */
+
+.row {
     display: flex;
-    border: blueviolet;
-    width: 16px;
-    height: 16px;
+}
+
+.column {
+    background-color: lightcoral;
+    padding: 1rem;
+    flex: 1;
 }
