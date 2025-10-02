@@ -1,0 +1,1 @@
+The following project is meant to illustrate a mixture of an etch-e-sketch and a sketchpad using JavaScript.
