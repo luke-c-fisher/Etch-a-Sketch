@@ -5,12 +5,9 @@ header {
 
 /* FLEXBOX ================== */
 
-/* .row {
+#row {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.column {
-    background-color: lightcoral;
-    padding: 1rem;
-    flex: 1;
-} */

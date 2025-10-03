@@ -1,15 +1,14 @@
 const container = document.getElementById("container");
 
 
-const parentDiv = document.createElement("div");
-parentDiv.style.display = "flex";
-parentDiv.style.background = "pink";
-parentDiv.textContent = "parent div";
+// USE FLEXBOX WITH JS TO CREATE DYNAMIC DIVS
+const row = document.createElement("div");
+row.id = "row"
+row.style.display = "flex";
+row.style.background = "pink";
+row.textContent = "parent div";
 
-
-
-
-container.appendChild(parentDiv);
+container.appendChild(row);
 
 
 
