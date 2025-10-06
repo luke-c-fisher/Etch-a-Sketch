@@ -21,6 +21,15 @@ header {
     box-sizing: border-box;
 }
 
+#btnContainer {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: crimson;
+}
 
 
 
