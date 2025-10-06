@@ -8,18 +8,20 @@ header {
 #container {
     display: flex;
     flex-wrap: wrap;
-    gap: 1em;
-    padding: 5px;
+    padding: 0.5rem;
     background-color: grey;
+    width: 988px;
 }
 
 #divs {
-    /* flex: 1; */
+    flex: 1;
     background-color: white;
     border: 1px solid black;
     color: #1F2937;
-    padding: 0.5rem;
+    padding: 1rem;
 }
+
+
 
 
 
