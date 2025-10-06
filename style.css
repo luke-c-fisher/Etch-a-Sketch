@@ -8,17 +8,17 @@ header {
 #container {
     display: flex;
     flex-wrap: wrap;
-    padding: 0.5rem;
+    padding: 1rem;
     background-color: grey;
-    width: 988px;
 }
 
-#divs {
-    flex: 1;
+#childDivs {
+    flex: 0 0 6.25%;
     background-color: white;
     border: 1px solid black;
     color: #1F2937;
     padding: 1rem;
+    box-sizing: border-box;
 }
 
 
