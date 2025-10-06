@@ -2,13 +2,18 @@ const container = document.getElementById("container");
 
 
 // USE FLEXBOX WITH JS TO CREATE DYNAMIC DIVS
-const row = document.createElement("div");
-row.id = "row"
-row.style.display = "flex";
-row.style.background = "pink";
-row.textContent = "parent div";
+// const grid = 16
 
-container.appendChild(row);
+// for (let i = 0; i < grid; i++){
+const divs = document.createElement("div");
+divs.id = "divs";
+divs.style.background = "pink";
+divs.textContent = "parent div";
+
+container.appendChild(divs);
+// }
+
+
 
 
 
