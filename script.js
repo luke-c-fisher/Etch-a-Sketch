@@ -17,12 +17,14 @@ for (let i = 0; i < grid; i++){
     container.appendChild(divs);
 }
 
-clickBtn.addEventListener('click', function(){
-    const userPrompt =  prompt("Enter number of squares per side:");
+function promptFunction(){
+    let userInput = prompt("Enter dimensions for a new grid:");
 
-    // if (userPrompt )
+    if (userInput >= 100){
+        alert("Value exceeds limit. Try again.");
+    } 
 
-});
+}
 
 
 
