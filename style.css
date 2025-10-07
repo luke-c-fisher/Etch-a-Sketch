@@ -18,8 +18,10 @@ header {
     border: 1px solid black;
     color: #1F2937;
     padding: 1rem;
-    box-sizing: border-box;
+    border-
 }
+
+/* CLICK ME BUTTON ============= */
 
 .btnContainer {
     display: flex;

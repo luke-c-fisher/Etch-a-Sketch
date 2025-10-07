@@ -16,13 +16,14 @@ function createGrid(size){
         divs.addEventListener("mouseover", function(){
             divs.style.backgroundColor = "dodgerblue";
             divs.style.color = "white";
+
         });
 
         container.appendChild(divs);
     }
 }
 
-createGrid(32);
+createGrid(16);
 
 
 function promptFunction(){
