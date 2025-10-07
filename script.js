@@ -4,14 +4,14 @@ const clickBtn = document.getElementById("clickBtn");
 
 // USE FLEXBOX WITH JS TO CREATE DYNAMIC DIVS
 
-const grid = 256
-
 function createGrid(size){
     const container = document.querySelector(".container"); 
 
     for (let i = 0; i < size * size; i++){
         const divs = document.createElement("div");
         divs.id = "childDivs"
+        divs.style.width = `calc(100% / ${size})`;
+        divs.style.height = `calc(100% / ${size})`;
         
         divs.addEventListener("mouseover", function(){
             divs.style.backgroundColor = "dodgerblue";
@@ -21,6 +21,8 @@ function createGrid(size){
         container.appendChild(divs);
     }
 }
+
+createGrid(32);
 
 
 function promptFunction(){
