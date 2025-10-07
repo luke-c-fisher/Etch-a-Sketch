@@ -19,7 +19,8 @@ for (let i = 0; i < grid; i++){
 }
 
 clickBtn.addEventListener('click', function(){
-    alert("Enter number of squares per side");
+    const userPrompt =  prompt("Enter number of squares per side:");
+    // return userPrompt;
 });
 
 
