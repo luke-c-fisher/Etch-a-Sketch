@@ -1,29 +1,39 @@
-const container = document.querySelector(".container");
+
 const clickBtn = document.getElementById("clickBtn");
 
 
 // USE FLEXBOX WITH JS TO CREATE DYNAMIC DIVS
+
 const grid = 256
 
-for (let i = 0; i < grid; i++){
-    const divs = document.createElement("div");
-    divs.id = "childDivs"
+function createGrid(size){
+    const container = document.querySelector(".container"); 
 
-    divs.addEventListener("mouseover", function(){
-    divs.style.backgroundColor = "blue";
-    divs.style.color = "white";
-    });
+    for (let i = 0; i < size * size; i++){
+        const divs = document.createElement("div");
+        divs.id = "childDivs"
+        
+        divs.addEventListener("mouseover", function(){
+            divs.style.backgroundColor = "dodgerblue";
+            divs.style.color = "white";
+        });
 
-    container.appendChild(divs);
+        container.appendChild(divs);
+    }
 }
 
+
 function promptFunction(){
-    let userInput = prompt("Enter dimensions for a new grid:");
+    let userInput = Number(prompt("Enter dimensions for a new grid:"));
+    // let newGrid = userInput * userInput;
 
     if (userInput >= 100){
         alert("Value exceeds limit. Try again.");
-    } 
+    } else if (userInput === 5){
+        // container.removeChild(divs);
+    }
 
+    
 }
 
 
