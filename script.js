@@ -8,7 +8,6 @@ const grid = 256
 for (let i = 0; i < grid; i++){
     const divs = document.createElement("div");
     divs.id = "childDivs"
-    // divs.textContent = "divs";
 
     divs.addEventListener("mouseover", function(){
     divs.style.backgroundColor = "blue";
@@ -20,7 +19,9 @@ for (let i = 0; i < grid; i++){
 
 clickBtn.addEventListener('click', function(){
     const userPrompt =  prompt("Enter number of squares per side:");
-    // return userPrompt;
+
+    // if (userPrompt )
+
 });
 
 
