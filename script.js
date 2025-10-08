@@ -9,13 +9,13 @@ function createGrid(size){
 
     for (let i = 0; i < size * size; i++){
         const divs = document.createElement("div");
-        divs.id = "childDivs"
+        divs.id = "divEffect";
 
         divs.style.flex = `0 0 calc(100% / ${size})`;
         
-        // divs.addEventListener("mouseover", function(e){
-        //     e.target.style.backgroundColor = "dodgerblue"
-        // });
+        divs.addEventListener("mouseenter", function(e){
+            e.target.style.backgroundColor = "dodgerblue"
+        });
 
         container.appendChild(divs);
     }
