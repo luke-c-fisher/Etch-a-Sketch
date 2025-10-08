@@ -8,13 +8,17 @@ header {
 .container {
     display: flex;
     flex-wrap: wrap;
-    /* padding: 1rem; */
-    background-color: grey;
+    /* width: 500px; */
+    border: 2px solid black;
 }
 
+/* We have to make it so that the divs fit inside the flex container */
+/* The key to understanding this problem is how dynamic divs can be fit into
+a static flex container */
+
 #divEffect {
+    /* flex: 1; */
     background-color: white;
-    border: 1px solid black;
     color: #1F2937;
     padding: 1rem;
     box-sizing: border-box;

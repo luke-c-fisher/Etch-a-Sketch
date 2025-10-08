@@ -10,7 +10,6 @@ function createGrid(size){
     for (let i = 0; i < size * size; i++){
         const divs = document.createElement("div");
         divs.id = "divEffect";
-
         divs.style.flex = `0 0 calc(100% / ${size})`;
         
         divs.addEventListener("mouseenter", function(e){
