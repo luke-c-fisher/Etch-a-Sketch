@@ -8,17 +8,18 @@ header {
 .container {
     display: flex;
     flex-wrap: wrap;
+    max-width: fit-content;
+    max-height: fit-content;
     /* padding: 1rem; */
     background-color: grey;
 }
 
 #childDivs {
-    /* flex: 1; */
     background-color: white;
     border: 1px solid black;
     color: #1F2937;
     padding: 1rem;
-    border-
+    box-sizing: border-box;
 }
 
 /* CLICK ME BUTTON ============= */
