@@ -8,21 +8,33 @@ header {
 .container {
     display: flex;
     flex-wrap: wrap;
-    /* width: 500px; */
+    width: 500px;
+    height: 500px;
     border: 2px solid black;
+}
+
+.container > * {
+    background-color: white;
+    color: #1F2937;
+    box-sizing: border-box;
 }
 
 /* We have to make it so that the divs fit inside the flex container */
 /* The key to understanding this problem is how dynamic divs can be fit into
 a static flex container */
 
-#divEffect {
-    /* flex: 1; */
-    background-color: white;
-    color: #1F2937;
-    padding: 1rem;
-    box-sizing: border-box;
-}
+
+/* why don't my divs display without a padding argument? */
+
+/* Why is it that #divEffect produces a different grid despite being a child of container, 
+and possesing the same arguments as 'container > *'? */
+
+/* The important takeaway here is that '.container > *' effectively simplifies what #divEffects aims to do 
+by letting the JS control the size of the layout within the container. With #divEffects, it accounts for the inidividual items, which
+need to be contained in .container with flex-basis to account for padding—in other words, it works against the CSS. This is a lesson to avoid specificity when
+using CSS */
+
+
 
 
 /* CLICK ME BUTTON ============= */
