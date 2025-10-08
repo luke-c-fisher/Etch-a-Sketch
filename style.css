@@ -14,7 +14,7 @@ header {
     background-color: grey;
 }
 
-#childDivs {
+#childDivs:hover {
     background-color: white;
     border: 1px solid black;
     color: #1F2937;
