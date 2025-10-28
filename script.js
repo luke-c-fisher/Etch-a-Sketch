@@ -25,7 +25,7 @@ function createGrid(size){
 // to identify potential functions that could help create the prompt function.
 
 function promptFunction(){
-    document.querySelector(".container").innerHTML = ""
+    document.querySelector(".container").innerHTML = "";
     let userInput = Number(prompt("Enter dimensions for a new grid:"));
 
     if (userInput >= 100){
@@ -33,7 +33,6 @@ function promptFunction(){
     }
 
     createGrid(userInput);
-
 }
 
 // Potential function to eliminate contents of container to allow for divs to be added and removed
